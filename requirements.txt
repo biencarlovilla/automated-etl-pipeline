@@ -1,0 +1,11 @@
+numpy==2.0.2
+pandas==2.3.3
+psycopg==3.2.13
+psycopg-binary==3.2.13
+python-dateutil==3.0.0
+python-dotenv==1.2.1
+pytz==2026.5
+six==1.17.0
+SQLAlchemy==2.0.55
+typing_extensions==4.16.0
+tzdata==2026.5

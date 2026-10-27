@@ -1,0 +1,18 @@
+# Database credentials
+.env
+
+# Python environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+
+# Execution logs
+logs/
+
+# macOS
+.DS_Store

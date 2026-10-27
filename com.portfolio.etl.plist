@@ -1,0 +1,39 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Scheduler identification -->
+    <key>Label</key>
+    <string>com.portfolio.etl</string>
+
+    <!-- Execute the ETL shell script -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/biencarlovilla/Desktop/Professional/Project6-ETL/run_etl.sh</string>
+    </array>
+
+    <!-- Schedule: Every day at 9:00 AM -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Do not execute immediately when registered -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Scheduler output log -->
+    <key>StandardOutPath</key>
+    <string>/tmp/portfolio-etl-stdout.log</string>
+
+    <!-- Scheduler error log -->
+    <key>StandardErrorPath</key>
+    <string>/tmp/portfolio-etl-stderr.log</string>
+</dict>
+</plist>
